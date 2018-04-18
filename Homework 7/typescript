@@ -1,0 +1,203 @@
+Script started on Thu 05 May 2016 01:37:25 PM PDT
+]0;seda004@empress:~/cs311/HWPrograms/forHW7[seda004@empress forHW7]$ g++ hw3p3.o llist.o dgraph.cpp stack.cpp hw7Client.cpp
+]0;seda004@empress:~/cs311/HWPrograms/forHW7[seda004@empress forHW7]$ ./a.[K[Ka.out
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+|Vertex Name|-> A
+|Out Degree|-> 2
+|Adjacent|-> [B F ]
+|Visit Number|-> 0
+
+|Vertex Name|-> B
+|Out Degree|-> 2
+|Adjacent|-> [C G ]
+|Visit Number|-> 0
+
+|Vertex Name|-> C
+|Out Degree|-> 1
+|Adjacent|-> [H ]
+|Visit Number|-> 0
+
+|Vertex Name|-> D
+|Out Degree|-> 0
+|Adjacent|-> [empty]
+|Visit Number|-> 0
+
+|Vertex Name|-> E
+|Out Degree|-> 0
+|Adjacent|-> [empty]
+|Visit Number|-> 0
+
+|Vertex Name|-> F
+|Out Degree|-> 2
+|Adjacent|-> [I E ]
+|Visit Number|-> 0
+
+|Vertex Name|-> G
+|Out Degree|-> 0
+|Adjacent|-> [empty]
+|Visit Number|-> 0
+
+|Vertex Name|-> H
+|Out Degree|-> 2
+|Adjacent|-> [G I ]
+|Visit Number|-> 0
+
+|Vertex Name|-> I
+|Out Degree|-> 3
+|Adjacent|-> [A G E ]
+|Visit Number|-> 0
+
+....in the llist constructor
+....in the llist destructor
+|Initial|-->: A
+B
+F
+--------------
+
+Visited: B
+....in the llist constructor
+....in the llist destructor
+|Updated Stack|
+C
+G
+F
+--------------
+Visited: C
+....in the llist constructor
+....in the llist destructor
+|Updated Stack|
+H
+G
+F
+--------------
+Visited: H
+....in the llist constructor
+....in the llist destructor
+|Updated Stack|
+G
+I
+G
+F
+--------------
+Visited: G
+....in the llist constructor
+....in the llist destructor
+|Updated Stack|
+I
+G
+F
+--------------
+Visited: I
+....in the llist constructor
+....in the llist destructor
+|Updated Stack|
+A
+G
+E
+G
+F
+--------------
+Visited: E
+....in the llist constructor
+....in the llist destructor
+|Updated Stack|
+G
+F
+--------------
+Visited: F
+....in the llist constructor
+....in the llist destructor
+|Updated Stack|
+I
+E
+--------------
+|Vertex Name|-> A
+|Out Degree|-> 2
+|Adjacent|-> [B F ]
+|Visit Number|-> 1
+
+|Vertex Name|-> B
+|Out Degree|-> 2
+|Adjacent|-> [C G ]
+|Visit Number|-> 2
+
+|Vertex Name|-> C
+|Out Degree|-> 1
+|Adjacent|-> [H ]
+|Visit Number|-> 3
+
+|Vertex Name|-> D
+|Out Degree|-> 0
+|Adjacent|-> [empty]
+|Visit Number|-> 0
+
+|Vertex Name|-> E
+|Out Degree|-> 0
+|Adjacent|-> [empty]
+|Visit Number|-> 7
+
+|Vertex Name|-> F
+|Out Degree|-> 2
+|Adjacent|-> [I E ]
+|Visit Number|-> 8
+
+|Vertex Name|-> G
+|Out Degree|-> 0
+|Adjacent|-> [empty]
+|Visit Number|-> 5
+
+|Vertex Name|-> H
+|Out Degree|-> 2
+|Adjacent|-> [G I ]
+|Visit Number|-> 4
+
+|Vertex Name|-> I
+|Out Degree|-> 3
+|Adjacent|-> [A G E ]
+|Visit Number|-> 6
+
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+]0;seda004@empress:~/cs311/HWPrograms/forHW7[seda004@empress forHW7]$ exit
+exit
+
+Script done on Thu 05 May 2016 01:37:37 PM PDT

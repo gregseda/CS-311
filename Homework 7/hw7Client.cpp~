@@ -1,0 +1,58 @@
+/*
+Name: Greg Seda
+
+
+
+
+*/
+
+#include "dgraph.h"
+
+
+int main()
+{
+  slist adjacent;
+  dgraph g;
+  int count = 1;
+  char temp;
+  stack s;
+
+  g.fillTable();
+  g.displayGraph();
+
+  g.visit(count, 'A');
+  count++;
+  adjacent = g.findAdjacency('A');
+
+  while(!adjacent.isEmpty())
+    {
+      adjacent.deleteRear(temp);
+      s.push(temp);
+    }
+
+  cout << "|Initial|-->: " >> endl;
+  s.displayAll();
+  cout << endl;
+
+  while(!s.isEmpty())
+    {
+      s.pop(temp);
+      if(!g.isMarked(temp))
+	{
+	  g.visit(count,temp);
+	  count++;
+	  cout << "Visited: " << temp << endl;
+	  adjacent = g.findAdjacency(temp);
+	  
+	  while(!adjacent.isEmpty())
+	    {
+	      adjacent.deleteRear(temp);
+	      s.push(temp);
+	    }
+	  cout << "|Updated Stack|" << endl;
+	  s.displayAll();
+	}
+    }
+  g.displayAll();
+  return 0;
+}
