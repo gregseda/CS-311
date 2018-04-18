@@ -1,0 +1,103 @@
+//=============================================================
+
+
+//==============================================================
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+int combine(vector <int> L1, vector <int> L2, vector <int>& L3, int input)
+{
+  int a = 0;
+  int b = 0; 
+  int r = 0;
+  
+  for(int i = 0; i < input; i++)
+    {
+      if(L1[a] > L2[b])
+	{
+	  r = L2[b];
+	  L3.push_back(r);
+	  b++;
+	  cout << "comparison" << endl;
+ 	}
+      else
+	{
+	  r = L1[a];
+	  L3.push_back(r);
+	  a++;
+	  cout << "comparison" << endl;
+	}
+      
+    }
+  if(a != L1.size() && b != L2.size())
+    {
+      if(L1[a] > L2[b])
+        {
+          r = L2[b];
+          L3.push_back(r);
+          b++;
+          cout << "comparison" << endl;
+        }
+      else
+        {
+          r = L1[a];
+          L3.push_back(r);
+          a++;
+          cout << "comparison" << endl;
+        }
+    }
+  if(a != L1.size())
+    {
+      for(int i = a; i < L1.size(); i++)
+	{
+	  r = L1[i];
+	  L3.push_back(r);
+	}
+    }
+  if(b != L2.size())
+    {
+      for(int i = b; i < L2.size(); i++)
+	{
+	      r = L2[i];
+	      L3.push_back(r);
+	}
+    }
+}
+
+int main()
+{
+  vector <int> L1, L2, L3;
+  int input;
+  int number;
+
+  cout << "How many numbers would you like to compare?" << endl;
+  cin >> input;
+  cout << endl;
+
+  cout << "=== List 1 ===" << endl;
+  for(int i = 0; i < input; i++)
+    {
+      cout << "Please enter the numbers in increasing order." << endl;
+      cin >> number;
+      L1.push_back(number);
+    }
+
+  cout << "=== List 2 ===" << endl;
+  for(int i = 0; i < input; i++)
+    {
+      cout << "Please enter the numbers in increasing order." << endl;
+      cin >> number;
+      L2.push_back(number);
+    }
+
+  combine(L1,L2,L3,input);
+
+  cout << "Numbers in order: " << endl;
+  for(int i = 0; i < L3.size(); i++)
+    { cout << L3[i];}
+  cout << endl;
+  
+  return 0;
+}

@@ -1,0 +1,58 @@
+//======================================================
+//HW#: HW2P1 Binary Search
+//Name:  Greg Seda
+//Compiler:  g++ compiler
+//File Type: Binary search implementation file
+//======================================================
+
+#include <iostream>
+using namespace std;  
+
+int binarySearch(int list[], int search, int myFirst, int myLast)
+{
+  if(search%2 == 0)
+    return -1;
+  else if(search > 19 || search < 1)
+    return -1;
+  else
+    {
+      int middle = (myFirst + myLast)/2;
+      if(search == list[middle]) return middle;
+      else if(search < list[middle]) myLast = middle - 1;       //go to first half
+      else if(search > list[middle]) myFirst = middle + 1;      //go to last half
+      return binarySearch(list, search, myFirst, myLast);
+    }
+}
+int main()
+{
+  int result;
+  int list[10];
+  int myFirst = 0;
+  int myLast = 9;
+  int search; 
+  int elements = 1;
+  
+  for(int i = 0; i <= 9; i++)
+    {
+      list[i] = elements;
+      elements = elements + 2;
+    }
+  
+  cout << "Please enter the number you are looking for." << endl;
+  cin >> search;
+  result = binarySearch(list, search, myFirst, myLast);
+ 
+  if(result == -1)
+    {
+      cout << "Search Failed." << endl;
+      return 0;
+    }
+  else
+    {
+      cout << "The number was found in position " << result + 1 << endl;
+      return 0;
+    }
+
+
+return 0;
+}
