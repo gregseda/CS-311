@@ -1,0 +1,48 @@
+Script started on Tue 29 Mar 2016 02:08:46 PM PDT
+]0;seda004@empress:~/cs311/HWPrograms/forHW3[seda004@empress forHW3]$ exitmacs slist.cpp[6Pslist.cppls[Kcd forHW3ls[Kcd HWProgramsls[Kcd cs311[4Pexitmacs HW3P3client.cpp[8Pslist.hls[Kcd forHW3ls[Kcd HWProgramsls[Kcd cs311[4Pexitmacs binstree.cpp[11P./a.outg++ binstree.cpp hw4Client.C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pemacs binstree.cpp[11P./a.outg++ binstree.cpp hw4Client.C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K./a.outg++ binstree.cpp hw4Client.C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kemacs binstree.cppls[K./a.outls[Kemacs binstree.cppclear[Kg++ binstree.cpp hw4Client.C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[K[2Pclearg++ binstree.cpp hw4Client.C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[Kemacs binstree.cppg++ binstree.cpp hw4Client.C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[Kemacs binstree.cppxit[Kcd cs311ls[Kcd HWProgramsls[Kcd forHW3ls[Kemacs slist.hHW3P3client.cppxit[Kcd cs311ls[Kcd HWProgramsls[Kcd forHW3ls[Kslist.cppemacs slist.cppxit[K[Kg++ ll[K[Kllist.cpp slist.cpp Hw[KW3P3client.cpp
+]0;seda004@empress:~/cs311/HWPrograms/forHW3[seda004@empress forHW3]$ ./a.out
+1
+added 1 to rear
+added 2 to rear
+added 3 to rear
+added 4 to rear
+added 5 to rear
+2
+in copy test
+added 6 to rear
+[ 1 2 3 4 5 6 ]
+finished
+calling the llist destructor
+-- After copytest --- 
+3
+[ 1 2 3 4 5 ]
+-- Testing operator overloading ---
+4
+tested L1 = L1
+5
+[ 1 2 3 4 5 ]
+6
+added 7 to rear
+added 8 to rear
+added 9 to rear
+added 10 to rear
+7
+[ 7 8 9 10 ]
+8
+tested L2 = L1
+9
+[ 1 2 3 4 5 ]
+10
+deleted rear
+11
+[ 1 2 3 4 ]
+12
+[ 1 2 3 4 ]
+13
+[ 1 2 3 4 5 ]
+calling the llist destructor
+calling the llist destructor
+]0;seda004@empress:~/cs311/HWPrograms/forHW3[seda004@empress forHW3]$ exit
+exit
+
+Script done on Tue 29 Mar 2016 02:09:39 PM PDT

@@ -1,0 +1,58 @@
+Script started on Tue 29 Mar 2016 02:11:34 PM PDT
+]0;seda004@empress:~/cs311/HWPrograms/forHW3[seda004@empress forHW3]$ exit./a.outg++ llist.cpp slist.cpp HW3P3client.cpp[1PW3P3client.cpp[1P3P3client.cpp[1PP3client.cpp[1P3client.cpp[1Pclient.cpp[1Plient.cpp[1Pient.cpp[1Pent.cpp[1Pnt.cpp[1Pt.cpp[1P.cpph.cppw.cpp3.cppe.cppc.cpp
+]0;seda004@empress:~/cs311/HWPrograms/forHW3[seda004@empress forHW3]$ ./a.out
+1
+L1 is empty and L2 is empty
+[ empty ]
+[ empty ]
+calling the llist destructor
+true
+
+2
+L1 is empty and L2 has 2 elements
+[ empty ]
+[ 1 2 ]
+calling the llist destructor
+false
+
+3
+L1 has 2 elements and L2 is empty
+[ 1 2 ]
+[ empty ]
+calling the llist destructor
+false
+
+4
+L1 has 1,2,3 and L2 has 1,2,3
+[ 1 2 3 ]
+[ 1 2 3 ]
+calling the llist destructor
+true
+
+5
+L1 has 1,2,3 and L2 has 1,2
+[ 1 2 3 ]
+[ 1 2 ]
+calling the llist destructor
+false
+
+6
+L1 has 1,2,3 and L2 has 1,2,3,4
+[ 1 2 3 ]
+[ 1 2 3 4 ]
+calling the llist destructor
+false
+
+7
+L1 has 1,2,3 and L2 has 1,2,3,4
+[ 1 2 3 ]
+[ 1 2 4 ]
+calling the llist destructor
+false
+
+calling the llist destructor
+calling the llist destructor
+]0;seda004@empress:~/cs311/HWPrograms/forHW3[seda004@empress forHW3]$ exit
+exit
+
+Script done on Tue 29 Mar 2016 02:11:52 PM PDT
