@@ -1,0 +1,59 @@
+//INSTRUCTION
+//Look for ** to complete this program 
+//The string output should match my hw1queueDemo.out 
+//except for the trace messages
+
+//=========================================================
+//HW#: HW1P1 queue
+//Your name: Greg Seda
+//Complier:  g++ compiler
+//File type: client program
+//===========================================================
+
+using namespace std;
+
+#include <iostream>
+#include <string>
+#include "queue.h"
+
+//Purpose of the program: This program will generate each possible string with the letters A, B, C.
+//Algorithm: Start with the queue having A,B,C in it. Then while the queue is not full, remove the front element. Remove the front element of the queue and add them to each letter. Then add the sum of each to the queue. Finally display the new queue from front to back. 
+int main()
+{
+  queue newQueue;          // letter queue
+  string q;                // removed front element 
+  string adder;            // sum of the q and a letter, then added to the queue
+
+  newQueue.add("A");      //queue starts with A, B and C in it
+  newQueue.add("B");
+  newQueue.add("C");
+
+  newQueue.displayAll();   // displays every element in the queue
+
+  while(!newQueue.isFull())
+    {
+      try
+	{
+	  newQueue.remove(q);    // removes the front element of the queue
+	  
+	  adder = q + 'A';       // sum of the removed element and 'A'
+	  newQueue.add(adder);   // adds adder to the queue
+
+	  adder = q + 'B';       // sum of removed element and 'B' 
+	  newQueue.add(adder);   // adds adder to the queue
+	  
+	  adder = q + 'C';       // sum of removed element and 'C'
+	  newQueue.add(adder);   // adds adder to the queue
+
+	  newQueue.displayAll();  // displays every element in queue
+	}
+      //Catches exceptions and displays error messages that describe what is wrong with the expression
+      catch(queue::Overflow)
+	{cerr << "Cannot add" << endl;
+	exit(1);}
+      catch(queue::Underflow)
+	{cerr << "Cannot remove" << endl;
+	exit(1);}
+    }
+}//end of the program
+

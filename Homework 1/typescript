@@ -1,0 +1,43 @@
+Script started on Mon 15 Feb 2016 05:18:40 PM PST
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ exit./a.outg++ stack.cpp client1.cppexit[Kmacs client1.cppxit[Kg++ stack.cpp client1.cpp./a.out[Kg++ stack.cpp client1.cpp[1@v
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: 34+
+Result: 7
+[ empty ]
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: 345+*
+Result: 27
+[ empty ]
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: 722+-
+Result: 3
+[ empty ]
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: 34+56++
+Result: 18
+[ empty ]
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: 12+34*45+-+
+Result: 6
+[ empty ]
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: 1234567891234
+Result: 4
+Incomplete expression
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: +
+Error has occured: Too few operands
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: 3+
+Error has occured: Too few operands
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: 3#
+Error has occured: Invalid element
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ ./a.out
+type a postfix expression: 2345+
+Result: 9
+Incomplete expression
+]0;seda004@empress:~/cs311/HWPrograms/forHW1[seda004@empress forHW1]$ exit
+exit
+
+Script done on Mon 15 Feb 2016 05:20:25 PM PST

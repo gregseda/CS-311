@@ -1,0 +1,99 @@
+//INSTRUCTION
+//Look for **
+//Fill in the function body
+//When done, compile queue.cpp to make sure it has no syntax errors
+
+//=========================================================
+//HW#: HW1P1 queue
+//Your name: Greg Seda
+//Complier:  g++ compiler
+//File type: queue implementation file
+//===========================================================
+
+using namespace std;
+#include <iostream>
+#include "queue.h"  
+
+// constructor 
+queue::queue()
+{ count = 0; front = 0; rear = -1; }  // intializes each variable
+
+
+//destructor 
+queue::~queue()
+{
+}
+
+// PURPOSE: returns true if queue is empty, otherwise false
+bool queue::isEmpty()
+{ if(count == 0) return true;  // if count equals 0, then the queue is empty 
+  else return false;}          // otherwise the queue has some elements in it
+ 
+
+// PURPOSE: returns true if queue is full, otherwise false
+bool queue:: isFull()
+{ if(count == MAX_SIZE) return true;    // if count is equal to the maximum size given, then the queue is full
+  else return false;}                  // otherwise the queue has room for more elements
+
+
+// PURPOSE: if full, throws an exception Overflow
+// if not full, enters an element at the rear 
+// PAREMETER: provide the element (newElem) to be added
+void queue:: add(el_t newElem)
+{ if(isFull()) throw Overflow();    // if the queue is full, then error message will displayed
+  else { 
+    rear = (rear+1)% MAX_SIZE; el[rear] = newElem; count++;}  // moves rear to the provided element, increments the counter 
+}
+
+// PURPOSE: if empty, calls an emergency exit routine
+// if not empty, removes the front element to give it back 
+// PARAMETER: provide a holder (removedElem) for the element removed (pass by ref)
+void queue::remove(el_t& removedElem)
+{ if(isEmpty()) throw Underflow();                                  // if the queue is empty, will display error message
+  else {
+    removedElem = el[front]; front = (front+1)% MAX_SIZE; count--;}     //  removes front element, and moves the front variable to the next element in the queue
+}
+
+// PURPOSE: if empty, throws an exception Underflow
+// if not empty, give back the front element (but does not remove it)
+//PARAMETER: provide a holder (theElem) for the element (pass by ref)
+void queue::frontElem(el_t& theElem)
+{ if(isEmpty()) throw Underflow();    // if the queue is empty, then display an error message
+  else cout << el[front];             // displays the front element of the queue
+}
+
+// PURPOSE: returns the current size to make it 
+// accessible to the client caller
+int queue::getSize()
+{ cout << "Current Size: " << count << endl;}         // displays the size of the queue
+
+// PURPOSE: display everything in the queue horizontally from front to rear
+// enclosed in []
+// if empty, displays [ empty ]
+void queue::displayAll()
+{ if(isEmpty()) cout << "[ empty ]" << endl;
+  else{
+    int i = front;                             // i is set to the front index of the queue 
+  cout << "[";
+  for(int j=1;j<=count;j++)                    // displays each element in the queue from the front to the back
+    {cout << " " << el[i];
+      i = (i+1)% MAX_SIZE;}
+      cout << " ]" << endl;}
+}
+
+// PURPOSE: if empty, throws an exception Underflow
+//if queue has just 1 element, does nothing
+//if queue has more than 1 element, moves the front one to the rear by
+//doing remove followed by add.
+void queue::goToBack()
+{
+  string temp = el[front];              // temp is front element of the queue    
+  if(isEmpty()) throw Underflow();      // if the queue is empty, displays error message 
+  else if(count > 1){                  // sends the front element to the back of the queue
+    remove(temp);
+    add(temp);}
+}
+
+
+
+
