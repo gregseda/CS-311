@@ -1,0 +1,213 @@
+Script started on Tue 26 Apr 2016 01:15:07 PM PDT
+]0;seda004@empress:~/cs311/HWPrograms/forHW6[seda004@empress forHW6]$ exit./a.outg++ dgraph.cpp hw6Client.cpp llist.o hw3p3.o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kg++ dgraph.cpp hw6Client.cpp llist.o hw3p3.o
+]0;seda004@empress:~/cs311/HWPrograms/forHW6[seda004@empress forHW6]$ ./a.pui[K[K[Kout
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+....in the llist constructor
+Vertex: A
+Out Degree: 2
+Adjacent: [B F ]
+
+Vertex: B
+Out Degree: 2
+Adjacent: [C G ]
+
+Vertex: C
+Out Degree: 1
+Adjacent: [H ]
+
+Vertex: D
+Out Degree: 0
+Adjacent: [empty]
+
+Vertex: E
+Out Degree: 0
+Adjacent: [empty]
+
+Vertex: F
+Out Degree: 2
+Adjacent: [I E ]
+
+Vertex: G
+Out Degree: 0
+Adjacent: [empty]
+
+Vertex: H
+Out Degree: 2
+Adjacent: [G I ]
+
+Vertex: I
+Out Degree: 3
+Adjacent: [A G E ]
+
+Please enter a vertex to find the out degree:  S
+
+Vertex is not valid.
+
+Please enter a vertex to find the out degree:  D
+
+Out Degree: 0
+
+Please enter 0 if you want to exit find the out degree(any number other than 0 will continue the program):  5
+
+Please enter a vertex to find the out degree:  E
+
+Out Degree: 0
+
+Please enter 0 if you want to exit find the out degree(any number other than 0 will continue the program):  6
+
+Please enter a vertex to find the out degree:  F
+
+Out Degree: 2
+
+Please enter 0 if you want to exit find the out degree(any number other than 0 will continue the program):  9
+
+Please enter a vertex to find the out degree:  H
+
+Out Degree: 2
+
+Please enter 0 if you want to exit find the out degree(any number other than 0 will continue the program):  7
+
+Please enter a vertex to find the out degree:  F
+
+Out Degree: 2
+
+Please enter 0 if you want to exit find the out degree(any number other than 0 will continue the program):  3
+
+Please enter a vertex to find the out degree:  Z
+
+Vertex is not valid.
+
+Please enter a vertex to find the out degree:  2
+
+Vertex is not valid.
+
+Please enter a vertex to find the out degree:  G
+
+Out Degree: 0
+
+Please enter 0 if you want to exit find the out degree(any number other than 0 will continue the program):  6
+
+Please enter a vertex to find the out degree:  A
+
+Out Degree: 2
+
+Please enter 0 if you want to exit find the out degree(any number other than 0 will continue the program):  0
+
+Please enter a vertex to find the adjacent ones:  B
+
+....in the llist constructor
+....in the llist destructor
+Adjacent Ones: B
+
+[C G ]
+Please enter 0 if you want to exit find the adjacent ones(any number other than 0 will continue the program):  4
+
+Please enter a vertex to find the adjacent ones:  J
+
+Vertex is not valid.
+
+Please enter a vertex to find the adjacent ones:  3
+
+Vertex is not valid.
+
+Please enter a vertex to find the adjacent ones:  E
+
+....in the llist constructor
+....in the llist destructor
+Adjacent Ones: E
+
+[empty]
+Please enter 0 if you want to exit find the adjacent ones(any number other than 0 will continue the program):  9
+
+Please enter a vertex to find the adjacent ones:  H
+
+....in the llist constructor
+....in the llist destructor
+Adjacent Ones: H
+
+[G I ]
+Please enter 0 if you want to exit find the adjacent ones(any number other than 0 will continue the program):  8
+
+Please enter a vertex to find the adjacent ones:  I
+
+....in the llist constructor
+....in the llist destructor
+Adjacent Ones: I
+
+[A G E ]
+Please enter 0 if you want to exit find the adjacent ones(any number other than 0 will continue the program):  3
+
+Please enter a vertex to find the adjacent ones:  E D
+
+....in the llist constructor
+....in the llist destructor
+Adjacent Ones: D
+
+[empty]
+Please enter 0 if you want to exit find the adjacent ones(any number other than 0 will continue the program):  4
+
+Please enter a vertex to find the adjacent ones:  9
+
+Vertex is not valid.
+
+Please enter a vertex to find the adjacent ones:  k
+
+Vertex is not valid.
+
+Please enter a vertex to find the adjacent ones:  l
+
+Vertex is not valid.
+
+Please enter a vertex to find the adjacent ones:  A
+
+....in the llist constructor
+....in the llist destructor
+Adjacent Ones: A
+
+[B F ]
+Please enter 0 if you want to exit find the adjacent ones(any number other than 0 will continue the program):  0
+
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+....in the llist destructor
+]0;seda004@empress:~/cs311/HWPrograms/forHW6[seda004@empress forHW6]$ exit
+exit
+
+Script done on Tue 26 Apr 2016 01:17:46 PM PDT
